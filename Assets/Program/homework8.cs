@@ -7,7 +7,7 @@ public class homework8 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+//الواجب الاول        
 while (true)
 {
     int number=Random.Range(1,21);
@@ -22,6 +22,9 @@ while (true)
     }
     Debug.Log(number);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//الواجب الثاني
 int counter=0;
 string sentence="";
 string[] word={"Cat", "Dog","Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird"};
