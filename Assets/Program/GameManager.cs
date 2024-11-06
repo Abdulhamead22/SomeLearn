@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
         player1.Heal(true);
     
         Player player2=new Player();
-        player2.InitializePlayer("Abd",55);
+        player2.InitializePlayer("Malk",55);
         player2.Heal(25);
         player2.Heal(false);
         player2.ShowPlayerCount(); 
