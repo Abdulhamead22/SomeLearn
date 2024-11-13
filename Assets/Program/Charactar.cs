@@ -6,8 +6,8 @@ public class Charactar
 {
     // Start is called before the first frame update
 
-    private string name;
-    private int health;
+    protected static string name;
+    protected static int health;
 
     public string Name     // Property 
     {
@@ -36,9 +36,9 @@ public class Charactar
         }
 
     }
-    public Charactar(string name, int health)
+    public  Charactar(string name1, int health1)
     {
-        name = Name;
-        health = Health;
+        name = name1;
+        health = health1;
     }
 }
