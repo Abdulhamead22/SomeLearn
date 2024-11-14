@@ -1,14 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+
+namespace Assignment18
+{
+    
 
 public class Charactar
 {
     // Start is called before the first frame update
 
-    protected static string name;
-    protected static int health;
-
+    public static string name;
+    private static int health;
+    protected Position position;
+   
     public string Name     // Property 
     {
         get
@@ -36,9 +43,27 @@ public class Charactar
         }
 
     }
-    public  Charactar(string name1, int health1)
+    public  Charactar(string name1, int health1,Position position1)
     {
         name = name1;
         health = health1;
+        position=position1;
     }
+public Charactar() : this("No name", 100,  new Position()) {}
+public virtual void DisplayInfo(){
+    Debug.Log("The Name: "+name + " The Health: "+health);
+    position.PrintPosition();   
 }
+
+    public void Attack(Charactar character, int attacks)
+    {
+        character.Health -= attacks;
+        
+    }
+    public void Attack(Charactar character,int attacks,string attackType)
+    {
+        Attack(character,attacks);
+        Debug.Log("The Type of Attacks: "+attackType);
+        
+    }
+}}
