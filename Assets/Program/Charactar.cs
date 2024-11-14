@@ -12,22 +12,11 @@ public class Charactar
 {
     // Start is called before the first frame update
 
-    public static string name;
-    private static int health;
+    public  string name;
+    private  int health;
     protected Position position;
    
-    public string Name     // Property 
-    {
-        get
-        {
-            return name;
-        }
-        set
-        {
-            name = value;
-
-        }
-    }
+    
     public int Health     // Property 
     {
         get

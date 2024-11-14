@@ -8,8 +8,10 @@ public class CharacterTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         Officer officer=new Officer("Abd",80,new Position(10,10,10));
         Soldier soldier=new Soldier();
+    
 
         Charactar[] charactars=new Charactar[2];
         charactars[0]=officer;
@@ -20,7 +22,7 @@ public class CharacterTest : MonoBehaviour
             charactars[i].DisplayInfo();
         }
                 Debug.Log("Health before attack: "+soldier.Health);
-                officer.Attack( soldier,10, "Attacks"); // Officer attacks Soldier with attackType
+                officer.Attack( soldier,10, "Attacks"); 
                 Debug.Log("Health after attack: "+soldier.Health);
 
     }
